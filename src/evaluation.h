@@ -9,7 +9,7 @@
  *
  * @return int Returns the final positons score.
  */
-int inline calculateScores(int scores[2], Player curPlayerToMove, int curPly)
+int inline calculateScores(int scores[2], int curPly)
 {
   if (scores[0] == scores[1])
   {
