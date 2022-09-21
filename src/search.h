@@ -4,6 +4,8 @@
 #include "killers.h"
 #include <stdint.h>
 
+#define MAX_DEPTH_ALLOWED 50
+
 /**
  * @const int INF The maximum value that can be achieved.
  */
