@@ -21,7 +21,7 @@ typedef int Depth;
  */
 bool inline hasKiller(uint64_t posHash, std::map<uint64_t, Move> hashTable)
 {
-	return hashTable.find(posHash) != hashTable.end() ? true : false;
+  return hashTable.find(posHash) != hashTable.end() ? true : false;
 };
 
 /**
@@ -34,22 +34,22 @@ bool inline hasKiller(uint64_t posHash, std::map<uint64_t, Move> hashTable)
  */
 Move inline getKiller(uint64_t posHash, std::map<uint64_t, Move> hashTable)
 {
-	return hashTable[posHash];
+  return hashTable[posHash];
 };
 
 struct Entry
 {
-	Move bestMove;
-	int bestScore;
-	Depth searchedAt;
-	Bound flag;
+  Move bestMove;
+  int bestScore;
+  Depth searchedAt;
+  Bound flag;
 };
 
 enum Bound
 {
-	UPPER,
-	LOWER,
-	EXACT,
+  UPPER,
+  LOWER,
+  EXACT,
 };
 
 /**
@@ -62,5 +62,5 @@ enum Bound
  */
 int inline getRelativeScore(int curScore, Player curPlayerToMove)
 {
-	return curPlayerToMove == WHITE ? curScore : -curScore;
+  return curPlayerToMove == WHITE ? curScore : -curScore;
 };
