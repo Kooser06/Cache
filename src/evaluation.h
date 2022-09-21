@@ -1,6 +1,8 @@
 #pragma once
 #include "search.h"
 
+#define MOVE_EXTENSION_MARGIN 40
+
 /**
  * @const int MOBILITY_WT Determines how important mobility should count.
  */
